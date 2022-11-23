@@ -51,7 +51,7 @@ class ContatoController extends Controller
         ];
 
         $feedback = [
-            'required' => 'O campo não pode ser vazio!',
+            'required' => ':attribute não pode ser vazio!',
             'formato_cpf' => 'O campo não é um CPF válido!'
         ];
         $request->validate($regras, $feedback);
